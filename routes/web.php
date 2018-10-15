@@ -13,7 +13,16 @@
 
 $router->get('/', function () use ($router) {
     date_default_timezone_set("Asia/Shanghai");
-    return date("Y-m-d h:i:sa");
+    return '北京时间： ' . date("Y-m-d h:i:sa");
+});
+
+$router->get('/utc', function () use ($router) {
+    return 'UTC: ' . date("Y-m-d h:i:sa");
+});
+
+$router->get('/24', function () use ($router) {
+    date_default_timezone_set("Asia/Shanghai");
+    return '北京时间(24H)： ' . date("Y-m-d H:i:s");
 });
 
 $router->get('/24', function () use ($router) {
