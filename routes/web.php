@@ -13,5 +13,5 @@
 
 $router->get('/', function () use ($router) {
     date_default_timezone_set("Asia/Shanghai");
-    return date("Y-m-d h:i:sa");
+    return '北京时间: ' . date("Y-m-d h:i:sa");
 });
