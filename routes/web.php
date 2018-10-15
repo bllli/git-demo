@@ -17,5 +17,5 @@ $router->get('/', function () use ($router) {
 });
 
 $router->get('/utc', function () use ($router) {
-    return 'UTC： ' . date("Y-m-d h:i:sa");
+    return 'UTC: ' . date("Y-m-d h:i:sa");
 });
