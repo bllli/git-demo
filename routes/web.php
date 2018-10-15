@@ -24,8 +24,3 @@ $router->get('/24', function () use ($router) {
     date_default_timezone_set("Asia/Shanghai");
     return '北京时间(24H)： ' . date("Y-m-d H:i:s");
 });
-
-$router->get('/24', function () use ($router) {
-    date_default_timezone_set("Asia/Shanghai");
-    return '北京时间(24H)： ' . date("Y-m-d H:i:s");
-});
